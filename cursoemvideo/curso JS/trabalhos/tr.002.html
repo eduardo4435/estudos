@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: red;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>TESTE</h1>
+    <p>testando o paragrafo</p>
+    <p>testando o seletor</p>
+    <div>testando oque e uma <strong>DIV</strong></div>
+    <script>
+        document.write('Olá, mundo! </br>')
+        document.write('Meu nome e...</br>')
+        window.document.write(document.URL)
+        var p1 = document.getElementsByName('p')[0]
+        document.write('Aqui vai o resultado: ' + p1.innerText)
+        p1.style.color = 'blue'
+        var corpo = window.document.body
+        corpo.style.background = 'blue'
+    </script>
+</body>
+</html>

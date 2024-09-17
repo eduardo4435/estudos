@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>campos</title>
+    <style>
+        h1 {
+            color: rgb(0, 0, 0);
+            font: italic 200 2em arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>checkbox</h1>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Quais curso você fará?</legend>
+            <input type="checkbox" name="html" value="1">HTML<br>
+            <input type="checkbox" name="html" value="1">CSS<br>
+            <input type="checkbox" name="html" value="1">JavaScript<br>            
+        </fieldset>
+    </form>
+    <h1>radio com tag checked</h1>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Quais curso você fará?</legend>
+            <input type="radio" name="curso" value="HTML">HTML<br>
+            <input type="radio" name="curso" value="CSS">CSS<br>
+            <input type="radio" name="curso" value="JavaScript" checked>JavaScript<br>            
+        </fieldset>
+    </form>
+    <h1>select</h1>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Quais curso você fará?</legend>
+            <select name="curso">
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+            </select>          
+        </fieldset>
+    </form>
+    <h1>Email</h1>
+    <form action="index.html" method="post">
+        <input type="email" name="email">
+    </form>
+    <h1>Data</h1>
+    <form action="index.html" method="post">
+        <input type="date" name="data">
+    </form>
+    <h1>Escala</h1>
+    <form action="index.html" method="post">
+        <input type="range" name="faixa">
+    </form>
+    <h1>cor</h1>
+    <form action="index.html" method="post">
+        <input type="color" name="cor">
+    </form>
+    <h1>lista</h1>
+    <form action="index.html" method="post">
+        <input list="cursos" name="cursos">
+        <datalist id="cursos">
+            <option value="JavaScript">
+            <option value="HTML">
+            <option value="CSS">
+        </datalist>
+    </form>
+    <h1>arquivo</h1>
+    <form action="index.html" method="post" enctype="multipart/form-data">
+        <input type="file" name="arquivo">
+    </form>
+    <h1>oculto</h1>
+    <form action="index.html" method="post">
+        <input type="hidden" name="id" value="123">
+    </form>
+</body>
+</html>

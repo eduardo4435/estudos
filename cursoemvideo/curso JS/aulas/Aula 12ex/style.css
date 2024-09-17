@@ -1,0 +1,49 @@
+@charset "UTF-8";
+img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+}
+body {
+    background: rgb(70, 142, 236);
+    font: normal 15pt arial, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    transition: .5s;
+}
+
+section:hover {
+    transform: scale(1.1);
+}
+
+section:active {
+    transform: scale(0.9);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+#msg {
+    text-align: center;
+}
+
+#img {
+    margin: auto;
+    padding: 10px;
+}
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de site usando flex-box</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            padding: 10px;
+            font: bold 2em arial
+        }
+        p {
+            font-size: 2em;
+            font-weight: normal;
+            line-height: 1em;
+            padding: 15px;
+
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgray;
+        }
+        #global {
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+        }
+        header {
+            background-color: blue;
+            width: 100%;
+            height: 120px;
+        }
+        main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: blueviolet;
+        }
+        #conteiner-main {
+            display: flex;
+            justify-content: center;
+            background-color: aqua;
+            width: 80%;
+            height: 100%;
+        }
+        section {
+            width: 80%;
+            background-color: brown;
+        }
+        aside {
+            background-color: bisque;
+            width: 20%;
+        }
+        footer {
+            background-color: darkblue;
+            width: 100%;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="global">
+        <header>
+            <h1>Cabeçalho</h1>
+        </header>
+            <main>
+               
+                <div id="conteiner-main">
+                    <aside>
+                       <h3>Assunto pereferico</h3>
+                       <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Quis aut quisquam nostrum assumenda vitae numquam sit, eaque exercitationem illum facere ea laboriosam amet quod <br> recusandae quam, cumque omnis, voluptates itaque?
+                       </p>
+                    </aside>
+                    <section>
+                       <h2>Assunto principal</h2>
+                       <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, repellendus voluptas, doloribus labore pariatur ad molestias repellat, quisquam dicta earum ipsum fugiat quam voluptatibus nam ut omnis nemo quas officia.
+                       </p>
+                       <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sunt minima eaque accusantium unde hic repellat, possimus ut? Ex odio eveniet voluptatem nam dolorum, sunt repellat aliquam dolores nobis sit.
+                       </p>
+                       <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum explicabo magni voluptatum ipsum libero obcaecati, ratione rem officiis? Animi eveniet placeat repellat ut aperiam quis velit minus ducimus itaque ullam.
+                       </p>
+                    </section>
+                </div>
+            </main>
+        <footer>
+            <h2>Rodapé</h2>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 vai finalmente suportar partições FAT32 com mais de 32 GB</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <h1>
+            Windows 11 vai finalmente suportar partições FAT32 com mais de 32 GB
+        </h1>
+        
+        <p>
+            Microsoft testa atualização que faz Windows 11 formatar unidades em FAT32 com até 2 TB de tamanho; limite de 32 GB é herança do Windows 95
+        </p>
+
+    </header>
+    <nav>
+        <a href="#" id="a1">Home</a>
+        <a href="#" id="a2">Notícias</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Contato</a>
+    </nav>
+    <main>
+        <article>
+            <picture>
+                <source media="(max-width: 500px)" srcset="img/windows-grande.png" type="image/png">
+                <source media="(max-width: 1000px)" srcset="img/windows-media.png" type="image/png">
+                <img src="img/windows-pequena.png" alt="windows 11">
+            </picture>
+            
+            <figcaption>
+                Windows 11 vai finalmente suportar partições FAT32 com mais de 32 GB
+            </figcaption>
+            
+            <p>
+                Em mais um capítulo da série “antes tarde do que mais tarde”, a Microsoft decidiu extinguir o limite que fazia o Windows 11 suportar somente partições FAT32 com até 32 GB de tamanho. Com a mudança, o novo limite passa a ser de 2 TB, o que condiz com as capacidades dos dispositivos de armazenamento atuais.
+            </p>
+            <p>
+                O limite de 32 GB é curioso porque ele foi implementado de forma improvisada, digamos assim. Essa restrição surgiu no <abbr title="Download"><a href="midia/PAUTA.pdf">Windows</a></abbr> 95 e vinha sendo “herdada” pelas versões sucessoras do sistema operacional.
+            </p>
+            <p>
+                Dave Plummer, ex-desenvolvedor da Microsoft, explicou em postagem no X/Twitter em março que foi responsável pela caixa de diálogo Formatar do Windows que impõe esse limite:
+
+            </p>
+            <p>
+                (…) Tive que decidir qual tamanho da “folga de cluster” seria exagerada, e isso acabou restringindo o tamanho do formato de um volume FAT a 32 GB. Esse limite também foi uma escolha arbitrária naquela manhã, e uma que ficou com a gente como um efeito colateral permanente.
+            </p>
+            <p>
+                Dave Plummer, ex-desenvolvedor da Microsoft
+            </p>
+            <h2>
+                FAT32 com até 2 TB no Windows 11
+            </h2>
+            <p>
+                Outro detalhe curioso é que o Windows 11 e versões anteriores já suportam unidades com sistema de arquivos FAT32 com até 2 TB de tamanho, só não permite que essas partições sejam criadas de modo nativo. Isso obriga o usuário a recorrer a alguns truques, como usar ferramentas de terceiros para esse fim.
+            </p>
+
+            <audio controls>
+                <source src="midia/audio-01.mp3" type="audio/mpeg">
+                <source src="midia/audio-02.mp3" type="audio/mpeg">
+            </audio>
+
+            <p>
+                Parece que alguém da Microsoft finalmente olhou para esse ponto e decidiu promover uma mudança no Windows 11. Mas com ressalvas.
+            </p>
+
+            <p>
+                A primeira ressalva é que, por enquanto, o suporte à criação de partições FAT32 com até 2 TB está restrita à versão de teste Canary do Windows 11 (compilação 27686) para quem participa do programa Windows Insider. Não está claro quando a mudança chegará à versão final do sistema.
+            </p>
+
+            <p>
+                A segunda é que a novidade vale apenas para a instrução format digitada em linha de comando, via CMD, por exemplo (vide a imagem abaixo). A opção Formatar que aparece quando você seleciona a unidade com o botão direito do mouse ainda exibirá o limite de 32 GB, pelo menos até a Microsoft decidir mudar esse componente também.
+            </p>
+            
+                <img src="img/cod.jpg" alt="codigo" id="img">
+
+            <p>
+                Por fim, o Verge observa que o Windows 11 continua suportando arquivos individuais com limite de até 4 GB de tamanho em volumes FAT32.
+            </p>
+            <p>
+                De todo modo, o sistema de arquivos FAT32 já não é tão utilizado quanto antigamente. Hoje, ele é mais implementado em cartões de memória ou pendrives, por exemplo. Mas, para esses dispositivos, pode ser mais interessante o padrão exFAT. Já para SSDs e HDs no Windows, o NTFS é o sistema de arquivos padrão.
+            </p>
+            <aside>
+                <p>
+                    Conheça as diferenças entre NTFS, FAT32 e exFAT aqui mesmo no Tecnoblog.
+
+                    <ul>
+                        <li>
+                            1.5 - <abbr title="Bolo de Copo">Cupcake</abbr>
+    
+                        </li>
+                        <li>
+                            1.6 - <abbr title="Rosquinha">Donut</abbr>
+    
+                        </li>
+                        <li>
+                            3.0 - <abbr title="Bomba">Eclair</abbr>
+    
+                        </li>
+                        <li>
+                            2.2 - <abbr title="Iorgute Congelado">Froyo</abbr>
+    
+                        </li>
+                        <li>
+                            2.3 - <abbr title="Biscoito de Gengibre">Gingerbread</abbr>
+    
+                        </li>
+                        <li>
+                            3.0 - <abbr title="Favo de Mel">Honeycomb</abbr>
+    
+                        </li>
+                        <li>
+                            4.0 - <abbr title="Saunduíche de Sorvete">Ice Cream Sandwich</abbr>
+    
+                        </li>
+                        <li>
+                            4.1 - <abbr title="Jujuba">Jelly Bean</abbr>
+    
+                        </li>
+                        <li>
+                            4.4 - <abbr title="KitKat">KitKat</abbr>
+    
+                        </li>
+                        <li>
+                            5.0 - <abbr title="Pirulito">Lolipop</abbr>
+    
+                        </li>
+                        <li>
+                            6.0 - <abbr title="Marshmallow">Marshmallow</abbr>
+    
+                        </li>
+                        <li>
+                            7.0 - <abbr title="Torrone">Nougat</abbr>
+    
+                        </li>
+                        <li>
+                            8.0 - <abbr title="Oreo">Oreo</abbr>
+    
+                        </li>
+                        <li>
+                            9.0 - <abbr title="Torta">Pie</abbr>
+    
+                        </li>
+                    </ul>
+    
+                </p>
+
+            </aside>
+
+            <video controls>
+                <source src="midia/videolimão.mp4" type="video/mp4">
+                <source src="midia/videolimão.ogv" type="video/ogg">
+            </video>
+
+        </article>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

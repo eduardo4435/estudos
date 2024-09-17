@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none; /* tirar ou colocar o sublinhado */
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+        /*
+        pseudo-elemento = :: (serve para modificar a forma de um elemento)
+        */
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .especial::before {
+            content: '♫';
+        }
+
+        .especial2::after {
+            content: '♘';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100043910050643" target="_blank" rel="next">facebook</a></li>
+        <li><a href="https://www.instagram.com/edu.crz_/" target="_blank" rel="next" class="especial">instagram</a></li>
+        <li><a href="https://x.com/e_duxx" target="_blank" rel="next" class="especial2">x</a></li>
+    </ul>
+</body>
+</html>

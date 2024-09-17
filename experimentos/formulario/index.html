@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="index.html" method="post">
+        nome: <input type="text" name="nome" placeholder="Informe o seu nome">
+        CPF: <input type="text" name="cpf" maxlength="14" pattern="[1-9] {3} \. [1-9] {3}\. [1-9] {3} - [1-9] {2}" placeholder="111.222.333-44"><br>
+        senha: <input type="password" maxlength="10"><br>
+        idade: <input type="text" data-="idade" placeholder="idade" disabled><br>
+        botão: <input type="button">
+        <p>texto:</p>
+        <label for="endereço">endereço</label>
+        <textarea name="texto grande" id="endereço">endereço:</textarea>
+        <button autofocus type="submit">enviar</button>
+        <fieldset>
+            <legend>informações</legend>
+            <label for="informações">informações</label>
+            <label for="documentos">documentos:</label><br>
+            <input type="text" id="informações" name="nome" placeholder="infromações"><br>
+            <input type="text" id="documentos"  placeholder="documen">
+        </fieldset>
+    </form>
+    
+<!--
+    indicar oque vai ser escrito no campo - placeholder
+    maximo de caractere - maxlength
+    tipo do input - type="password" ou "text" ou "button" etc.
+    focar no botão - autofocus
+    tipo de botão para envio - submit
+    criar uma area para informações especificas - fieldset
+    criar um campo para digitação de muitas informações - textarea
+-->
+</body>
+</html>
