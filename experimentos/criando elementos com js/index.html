@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criando elementos com js</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        #grandparents {
+            z-index: 4;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+            background-color: brown;
+        }
+        #parents {
+            height: 200px;
+            width: 200px;
+            background-color: coral;
+        }
+        #child {
+            
+            top: 0;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: darkviolet;
+        }
+
+        .z {
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparents">
+        <div id="parents">
+            <div id="child">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="z" style="background-color: turquoise; left: 30px; top: 30px;">
+
+    </div>
+    <div class="z" style="background-color: violet; left: 40px; top: 40px; z-index: 2;">
+
+    </div>
+    <div class="z" style="background-color: yellow; z-index: -3;">
+
+    </div>
+
+    <script>
+        var chamar = document.querySelector('#child')
+        addEventListener('load',carregar)
+        
+       function carregar() {
+
+        var novoel = document.createElement('div')
+        novoel.style.background = 'red'
+        var texto = document.createTextNode('oi vagabunda')
+        var div = document.querySelector('#child')
+        div.appendChild(novoel.appendChild(texto))
+       } 
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body onresize="mudou()">
+    <header>
+        <h1>Meu site</h1>
+        <div  id="icone"><img src="img/menu.ico" alt="" onclick="mostramenu()"></div>
+        <menu id="minu">
+            <ul>
+                <li>
+                    <a href="#">Opção 1</a>
+                </li>
+                <li>
+                    <a href="#">Opção 2</a>
+                </li>
+                <li>
+                    <a href="#">Opção 3</a>
+                </li>
+                <li>
+                    <a href="#">Opção 4</a>
+                </li>
+                <li>
+                    <a href="#">Opção 5</a>
+                </li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Unde voluptatum laborum praesentium animi fugiat nesciunt, ducimus 
+                quas illum quo adipisci quis assumenda facilis odio quos voluptatibus 
+                pariatur laboriosam obcaecati necessitatibus? Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Placeat reprehenderit repellendus earum? 
+                Distinctio nihil laudantium placeat. Tempore itaque sint alias provident 
+                repudiandae fugit nulla necessitatibus perferendis quia? Totam, 
+                vel accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Eveniet architecto tempora ea inventore distinctio corrupti, saepe ducimus 
+                ipsam recusandae, quasi et dolore sunt? Quos quam sed eaque harum provident. 
+                Cupiditate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Unde voluptatum laborum praesentium animi fugiat nesciunt, ducimus 
+                quas illum quo adipisci quis assumenda facilis odio quos voluptatibus 
+                pariatur laboriosam obcaecati necessitatibus? Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Placeat reprehenderit repellendus earum? 
+                Distinctio nihil laudantium placeat. Tempore itaque sint alias provident 
+                repudiandae fugit nulla necessitatibus perferendis quia? Totam, 
+                vel accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Eveniet architecto tempora ea inventore distinctio corrupti, saepe ducimus 
+                ipsam recusandae, quasi et dolore sunt? Quos quam sed eaque harum provident. 
+                Cupiditate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Unde voluptatum laborum praesentium animi fugiat nesciunt, ducimus 
+                quas illum quo adipisci quis assumenda facilis odio quos voluptatibus 
+                pariatur laboriosam obcaecati necessitatibus? Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Placeat reprehenderit repellendus earum? 
+                Distinctio nihil laudantium placeat. Tempore itaque sint alias provident 
+                repudiandae fugit nulla necessitatibus perferendis quia? Totam, 
+                vel accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Eveniet architecto tempora ea inventore distinctio corrupti, saepe ducimus 
+                ipsam recusandae, quasi et dolore sunt? Quos quam sed eaque harum provident. 
+                Cupiditate.
+            </p>
+        </article>
+    </main>
+    <script>
+        let minu = document.getElementById('minu')
+        function mostramenu() {
+            if (minu.style.display == 'block') {
+                minu.style.display = 'none'
+            } else {
+                minu.style.display = 'block'
+            }
+            
+            
+        }
+
+        function mudou() {
+            if (window.innerWidth >= 768) {
+                minu.style.display = 'block'
+            } else {
+                minu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
