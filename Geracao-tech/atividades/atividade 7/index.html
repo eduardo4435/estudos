@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - aula11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <input type="text" id="buscar" placeholder="Pesquisar por título">
+    </header>
+    <main>
+        <section id="tarefas">
+            <h2>Tarefas <button id="addTarefa">Nova tarefa</button></h2>
+            <!--<h6>Nenhuma tarefa registrada</h6>-->
+            <ul id="lista">
+                <li>
+                    <h5>Titulo da tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo harum soluta ipsum modi, reprehenderit animi ut molestiae quis. Esse optio vel autem ipsum! Consequuntur vitae minima minus, illum ducimus natus.</p>
+                    <div class="actions">
+                        <abbr title="Eliminar tarefa">
+                            <box-icon name='trash' size="sm"></box-icon>
+                        </abbr>
+                    </div>
+                </li>
+                <li>
+                    <h5>Titulo da tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo harum soluta ipsum modi, reprehenderit animi ut molestiae quis. Esse optio vel autem ipsum! Consequuntur vitae minima minus, illum ducimus natus.</p>
+                </li>
+                <li>
+                    <h5>Titulo da tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo harum soluta ipsum modi, reprehenderit animi ut molestiae quis. Esse optio vel autem ipsum! Consequuntur vitae minima minus, illum ducimus natus.</p>
+                </li>
+                <li>
+                    <h5>Titulo da tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo harum soluta ipsum modi, reprehenderit animi ut molestiae quis. Esse optio vel autem ipsum! Consequuntur vitae minima minus, illum ducimus natus.</p>
+                </li>
+                <li>
+                    <h5>Titulo da tarefa</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo harum soluta ipsum modi, reprehenderit animi ut molestiae quis. Esse optio vel autem ipsum! Consequuntur vitae minima minus, illum ducimus natus.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="overlay"  onclick="fecharModal()">
+            <div id="criarTarefa" class="modal">
+                <form>
+                    <h3>Criar tarefa <box-icon name='x' size="md" onclick="fecharModal()"></box-icon></h3>
+                    <label for="titulo">Titulo</label>
+                    <input type="text" id="titulo">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao"></textarea>
+                    <button>Criar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>   
+</body>
+</html>
