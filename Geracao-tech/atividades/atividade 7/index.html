@@ -8,48 +8,22 @@
 </head>
 <body>
     <header>
-        <input type="text" id="buscar" placeholder="Pesquisar por título">
+        <input type="text" id="buscar" onkeyup="pesquisarTarefas()" placeholder="Pesquisar por título">
     </header>
     <main>
         <section id="tarefas">
-            <h2>Tarefas <button id="addTarefa">Nova tarefa</button></h2>
+            <h2>Tarefas <button onclick="abrirModal()">Nova tarefa</button></h2>
             <!--<h6>Nenhuma tarefa registrada</h6>-->
-            <ul id="lista">
-                <li>
-                    <h5>Titulo da tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo harum soluta ipsum modi, reprehenderit animi ut molestiae quis. Esse optio vel autem ipsum! Consequuntur vitae minima minus, illum ducimus natus.</p>
-                    <div class="actions">
-                        <abbr title="Eliminar tarefa">
-                            <box-icon name='trash' size="sm"></box-icon>
-                        </abbr>
-                    </div>
-                </li>
-                <li>
-                    <h5>Titulo da tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo harum soluta ipsum modi, reprehenderit animi ut molestiae quis. Esse optio vel autem ipsum! Consequuntur vitae minima minus, illum ducimus natus.</p>
-                </li>
-                <li>
-                    <h5>Titulo da tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo harum soluta ipsum modi, reprehenderit animi ut molestiae quis. Esse optio vel autem ipsum! Consequuntur vitae minima minus, illum ducimus natus.</p>
-                </li>
-                <li>
-                    <h5>Titulo da tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo harum soluta ipsum modi, reprehenderit animi ut molestiae quis. Esse optio vel autem ipsum! Consequuntur vitae minima minus, illum ducimus natus.</p>
-                </li>
-                <li>
-                    <h5>Titulo da tarefa</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo harum soluta ipsum modi, reprehenderit animi ut molestiae quis. Esse optio vel autem ipsum! Consequuntur vitae minima minus, illum ducimus natus.</p>
-                </li>
-            </ul>
+            <ul id="lista"></ul>
         </section>
-        <section id="overlay"  onclick="fecharModal()">
+        <section id="overlay">
             <div id="criarTarefa" class="modal">
-                <form>
+                <form onsubmit="novaTarefa()">
                     <h3>Criar tarefa <box-icon name='x' size="md" onclick="fecharModal()"></box-icon></h3>
                     <label for="titulo">Titulo</label>
-                    <input type="text" id="titulo">
+                    <input type="text" id="titulo" required>
                     <label for="descricao">Descrição</label>
-                    <textarea id="descricao"></textarea>
+                    <textarea id="descricao" required></textarea>
                     <button>Criar</button>
                 </form>
             </div>
